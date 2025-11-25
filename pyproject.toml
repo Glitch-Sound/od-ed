@@ -1,0 +1,20 @@
+[project]
+name = "object-detection"
+version = "0.1.0"
+requires-python = "==3.8.*"
+dependencies = [
+    "onnxruntime==1.12.0",
+    "torch==1.10.2",
+    "torchvision==0.11.3",
+    "cython<3",
+    "effdet==0.2.4",
+    "timm==0.4.12",
+    "pillow>=9.0.0",
+    "pycocotools==2.0.4",
+    "setuptools>=60.0",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.14.6",
+]
